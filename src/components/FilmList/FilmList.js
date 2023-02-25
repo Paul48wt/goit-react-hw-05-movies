@@ -14,5 +14,3 @@ export const FilmList = ({ films }) => {
     </div>
   );
 };
-
-// films.map(item => <li>{item.title}</li>);

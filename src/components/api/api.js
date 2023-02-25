@@ -10,3 +10,10 @@ export const fetchMovie = async () => {
 
   return response.data;
 };
+
+export const fetchMovieDetails = async id => {
+  const response = await axios.get(
+    `https://api.themoviedb.org/3/movie/${id}?api_key=${API_KEY}&language=uk`
+  );
+  return response.data;
+};
